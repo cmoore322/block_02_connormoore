@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sage-navbar mb-4 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="bi bi-grid-3x3-gap-fill me-2"></i>
+                Connor's Super Awesome 2048 Game
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="https://github.com/cmoore322" class="nav-link" target="_blank">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://validator.w3.org/" class="nav-link" target="_blank">
+                            <i class="bi bi-check2-circle"></i> Nu Validator
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://wave.webaim.org/" class="nav-link" target="_blank">
+                            <i class="bi bi-eye"></i> WAVE Checker
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/cmoore322/block_02_connormoore" class="nav-link" target="_blank">
+                            <i class="bi bi-code-slash"></i> Source Code
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout with Ads -->
+    <div class="container-fluid">
+        <div class="row h-100 min-vh-100">
+            <!-- Left Ad -->
+            <div class="d-none d-md-flex col-md-2 ad-col">
+                <img src="images/images.jpg" alt="Ad Left" class="ad-img">
+            </div>
+            <!-- Main Content -->
+            <div class="col-12 col-md-8">
+                <main class="text-center">
+                    <div class="mb-3">
+                        <input type="text" id="usernameInput" class="form-control d-inline-block w-auto" placeholder="Enter your name">
+                        <button id="welcomeBtn" class="btn btn-primary ms-2">Greet Me</button>
+                    </div>
+                    <div id="greeting" class="mb-4 fs-4"></div>
+                    <div class="mb-3">
+                        <div class="fw-bold fs-5">Score: <span id="score">0</span></div>
+                        <button id="resetButton" class="btn btn-success mt-2">Reset Game</button>
+                    </div>
+                    <div id="gameBoard" class="game-board mx-auto mb-4"></div>
+                    <div id="gameOverMsg" class="alert alert-danger fw-bold d-none"></div>
+                    <section class="mb-4">
+                        <h2>How to Play</h2>
+                        <ol class="text-start d-inline-block">
+                            <li>Use your arrow keys to move the tiles.</li>
+                            <li>When two tiles with the same number touch, they merge into one!</li>
+                            <li>Try to reach the 2048 tile.</li>
+                        </ol>
+                    </section>
+                </main>
+            </div>
+            <!-- Right Ad -->
+            <div class="d-none d-md-flex col-md-2 ad-col">
+                <img src="images/cat.jpg" alt="Ad Right" class="ad-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer sage-navbar text-center py-3 mt-4">
+        <span>&copy; 2025 Connor Moore | <a href="https://github.com/cmoore322" target="_blank">GitHub</a></span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
