@@ -121,7 +121,7 @@ main.text-center {
 
 /* Reset button styling */
 #resetButton {
-    background-color: #007bff;
+    background-color: #9caf88;
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 0.75rem;
@@ -133,7 +133,7 @@ main.text-center {
     border: none;
 }
 #resetButton:hover {
-    background-color: #0056b3;
+    background-color: #9caf88;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
 }
